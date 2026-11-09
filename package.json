@@ -1,0 +1,17 @@
+{
+  "name": "span-duration-percentile-calculator",
+  "version": "0.1.0",
+  "description": "Tracks span durations in a bounded sample and reports p50, p90, p99 on demand.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
