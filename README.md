@@ -46,3 +46,10 @@ Percentiles use nearest-rank, not interpolation. With `[1, 2, 3, 4]`, `p50` is `
 
 - `count` — total observations seen.
 - `size` — observations currently retained.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
